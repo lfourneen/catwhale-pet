@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "enabled": true,
+  "preset": "standard",
+  "clock": {
+    "mode": "system",
+    "offsetMin": 0
+  },
+  "phasesPresets": {
+    "standard": [
+      {
+        "id": "dawn",
+        "name": "Dawn",
+        "from": "06:00",
+        "to": "09:00"
+      },
+      {
+        "id": "morning",
+        "name": "Morning",
+        "from": "09:00",
+        "to": "11:30"
+      },
+      {
+        "id": "lunch",
+        "name": "Lunch",
+        "from": "11:30",
+        "to": "13:30"
+      },
+      {
+        "id": "afternoon",
+        "name": "Afternoon",
+        "from": "13:30",
+        "to": "17:30"
+      },
+      {
+        "id": "evening",
+        "name": "After work",
+        "from": "17:30",
+        "to": "19:30"
+      },
+      {
+        "id": "night",
+        "name": "Night",
+        "from": "19:30",
+        "to": "23:00"
+      },
+      {
+        "id": "late",
+        "name": "Late night",
+        "from": "23:00",
+        "to": "06:00"
+      }
+    ],
+    "nightowl": [
+      {
+        "id": "dawn",
+        "name": "Dawn",
+        "from": "08:00",
+        "to": "11:00"
+      },
+      {
+        "id": "morning",
+        "name": "Morning",
+        "from": "11:00",
+        "to": "13:00"
+      },
+      {
+        "id": "lunch",
+        "name": "Lunch",
+        "from": "13:00",
+        "to": "14:30"
+      },
+      {
+        "id": "afternoon",
+        "name": "Afternoon",
+        "from": "14:30",
+        "to": "19:00"
+      },
+      {
+        "id": "evening",
+        "name": "After work",
+        "from": "19:00",
+        "to": "21:00"
+      },
+      {
+        "id": "night",
+        "name": "Night",
+        "from": "21:00",
+        "to": "02:00"
+      },
+      {
+        "id": "late",
+        "name": "Late night",
+        "from": "02:00",
+        "to": "08:00"
+      }
+    ],
+    "always_day": [
+      {
+        "id": "dawn",
+        "name": "Dawn",
+        "from": "06:00",
+        "to": "09:00"
+      },
+      {
+        "id": "morning",
+        "name": "Morning",
+        "from": "09:00",
+        "to": "11:30"
+      },
+      {
+        "id": "lunch",
+        "name": "Lunch",
+        "from": "11:30",
+        "to": "13:30"
+      },
+      {
+        "id": "afternoon",
+        "name": "Afternoon",
+        "from": "13:30",
+        "to": "23:00"
+      },
+      {
+        "id": "night",
+        "name": "Night",
+        "from": "23:00",
+        "to": "06:00"
+      }
+    ]
+  },
+  "phases": null,
+  "weights": {
+    "dawn": {
+      "tail_open": 3,
+      "run": 2.4,
+      "stretch": 2.4,
+      "read": 1,
+      "jump_high": 0.6,
+      "doze": 0.2,
+      "working": 0.2,
+      "sit_chair": 0.4,
+      "eat": 0.15,
+      "big_bowl": 0.1
+    },
+    "morning": {
+      "working": 2.5,
+      "read": 2,
+      "run": 1.2,
+      "stretch": 0.8,
+      "sit_chair": 1.5,
+      "tail_open": 0.8,
+      "doze": 0.25,
+      "eat": 0.1,
+      "big_bowl": 0.1,
+      "jump_high": 0.6
+    },
+    "lunch": {
+      "eat": 5,
+      "big_bowl": 4,
+      "doze": 2,
+      "idle": 1.2,
+      "sit_chair": 0.6,
+      "tail_open": 0.6,
+      "run": 0.3,
+      "jump_high": 0.4
+    },
+    "afternoon": {
+      "tail_open": 2,
+      "tail_closed": 2,
+      "sit_chair": 1.5,
+      "read": 1.2,
+      "run": 0.6,
+      "stretch": 0.8,
+      "working": 1,
+      "doze": 0.8,
+      "eat": 0.25,
+      "big_bowl": 0.15,
+      "jump_high": 0.6
+    },
+    "evening": {
+      "jump_high": 4.5,
+      "tail_open": 3,
+      "run": 2,
+      "stretch": 2,
+      "doze": 0.2,
+      "working": 0.3,
+      "eat": 0.3,
+      "big_bowl": 0.15,
+      "sit_chair": 0.8
+    },
+    "night": {
+      "doze": 3,
+      "tail_closed": 2,
+      "sit_chair": 1,
+      "read": 0.6,
+      "tail_open": 0.8,
+      "working": 0.4,
+      "stretch": 0.3,
+      "run": 0.15,
+      "jump_high": 0.2,
+      "eat": 0.25,
+      "big_bowl": 0.15
+    },
+    "late": {
+      "doze": 3,
+      "tail_closed": 2.4,
+      "idle": 3,
+      "sit_chair": 0.4,
+      "tail_open": 0.2,
+      "working": 0.05,
+      "read": 0.2,
+      "stretch": 0,
+      "run": 0,
+      "jump_high": 0,
+      "eat": 0,
+      "big_bowl": 0
+    }
+  },
+  "tempo": {
+    "dawn": 1.2,
+    "morning": 1,
+    "lunch": 0.8,
+    "afternoon": 0.9,
+    "evening": 1.4,
+    "night": 0.7,
+    "late": 0.35
+  },
+  "cpu": {
+    "enabled": true,
+    "smoothTauSec": 8,
+    "minHoldMs": 90000,
+    "hysteresis": 8,
+    "bands": [
+      {
+        "id": "calm",
+        "max": 25,
+        "label": "Quiet",
+        "tempo": 0.9,
+        "weights": {
+          "doze": 1.6,
+          "read": 1.4
+        }
+      },
+      {
+        "id": "busy",
+        "min": 25,
+        "max": 70,
+        "label": "Normal",
+        "tempo": 1,
+        "weights": {}
+      },
+      {
+        "id": "hot",
+        "min": 70,
+        "label": "Busy",
+        "tempo": 1.25,
+        "weights": {
+          "dizzy": 5,
+          "working": 1.8,
+          "doze": 0.1
+        }
+      }
+    ]
+  },
+  "deepNightFreeze": true,
+  "freezeRate": 0.35,
+  "loungeMinMs": 7000,
+  "loungeMaxMs": 14000,
+  "idleActChance": 0.35
+}

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Catwhale Pet
+Comment=Animated desktop pet for Wayland
+Exec=catwhale-pet
+Icon=catwhale-pet
+Terminal=false
+StartupNotify=false
+Categories=Utility;

@@ -1,0 +1,23 @@
+# Builds and local development
+/build/
+/build-*/
+/cmake-build-*/
+/result
+/result-*
+CMakeUserPresets.json
+.direnv/
+.scratch/
+*.log
+*.tmp
+
+# Editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Local configuration and diagnostics
+.nix-cache/
+diag/
+user-data/
+.env
+.env.*
